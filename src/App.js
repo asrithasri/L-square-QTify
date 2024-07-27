@@ -6,6 +6,7 @@ function App() {
   return (
     <>
     <StyledEngineProvider injectFirst>
+      
       <Navbar />
     </StyledEngineProvider>
     </>
