@@ -1,0 +1,10 @@
+.feedbackbutton{
+    font-family: 'Poppins';
+    border-radius: 12px;
+    padding: 10px 16px 10px 16px;
+    border: 1px;
+    background-color:#121212 ;
+    color:#34C94B ;
+    cursor: pointer;
+
+}
