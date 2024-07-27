@@ -28,13 +28,13 @@ import Search from "../Search/Search.jsx";
 import Button from "../Button/Button.jsx";
 
 export default function Navbar(){
-    return (
-        <>
-        <nav className={styles.navbar}>
-           <Logo /> 
-           <Search />
-           <Button /> 
-        </nav>
-        </>
-    )
+  return (
+    <>
+    <nav className={styles.navbar}>
+       <Logo /> 
+       <Search />
+       <Button /> 
+    </nav>
+    </>
+)
 }
