@@ -1,0 +1,10 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding:  8px;
+    
+
+}
+
+
