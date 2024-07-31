@@ -4,9 +4,10 @@ import Tab from "@mui/material/Tab";
 import Typography  from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import styles from "./Filters.module.css";
+import { StayPrimaryLandscape } from "@mui/icons-material";
 
  function TabPanel(props){
-    const {children , value,index,...other}= props;
+    const {children , value,index,...other }= props;
 
     return(
         <div 
@@ -15,7 +16,8 @@ import styles from "./Filters.module.css";
             id={`simple-tabpanel-${index}`}
             aria-label={`simple-tab-${index}`}
             {...other}>
-                {value ===index &&(
+
+                {value === index &&(
                     <Box sx={{p:3}}>
                         <Typography>{children}</Typography>
                     </Box>
@@ -39,6 +41,7 @@ function Filters({ filters, selectedFilterIndex, setSelectedFilterIndex}){
 
     return (
         <div>
+               <Box sx={{ borderBottom: 1, borderColor: 'divider' }} >
             <Tabs
                 value={selectedFilterIndex}
                 onChange={handleChange}
@@ -51,10 +54,11 @@ function Filters({ filters, selectedFilterIndex, setSelectedFilterIndex}){
                 }}
                 >
 
-{filters.map((ele, idx)=>(
-                        <Tab className={styles.tab} label={ele.label} {...allyProps(idx)} />
-                    ))}
+                {filters.map((ele, idx)=>
+                    <Tab className={styles.tab} label={ele.label} {...allyProps(idx)} />
+                    )}
                 </Tabs>
+                </Box>
         </div>
     );
 }

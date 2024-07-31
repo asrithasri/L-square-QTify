@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react';
 import {Outlet} from "react-router-dom";
 
 function App() {
-  const [data , setData] =useState({});
+  const [data , setData] = useState({});
 
   const generateData = (key,source)=>{
     source().then((data)=>{

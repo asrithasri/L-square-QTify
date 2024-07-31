@@ -1,6 +1,6 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation} from "swiper/modules";
+import {Navigation,Pagination} from "swiper/modules";
 import { useSwiper } from "swiper/react";
 import styles from "./Carousel.module.css";
 import "swiper/css";
@@ -11,7 +11,7 @@ const Controls = ({data}) => {
     const swiper = useSwiper();
 
     useEffect(()=>{
-        swiper.slideTo(0);
+        swiper.slideTo(0,1);
     }, [data]);
 
     return <></>;

@@ -26,12 +26,15 @@ import styles from "./Navbar.module.css"
 import Logo from "../Logo/Logo.jsx"
 import Search from "../Search/Search.jsx"; 
 import Button from "../Button/Button.jsx";
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
   return (
     <>
     <nav className={styles.navbar}>
+    <Link to={"/"}>
        <Logo /> 
+       </Link>
        <Search />
        <Button /> 
     </nav>

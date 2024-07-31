@@ -6,6 +6,7 @@ import Filters from "../../Components/Filters/Filters";
 import Styles from "./Section.module.css"
 
 export default function Section({title,data,filterSource,type}) {
+   
     const [filters,setFilters] = useState([
         {
             key:"all",
@@ -51,7 +52,7 @@ export default function Section({title,data,filterSource,type}) {
                     setSelectedFilterIndex = {setSelectedFilterIndex}/>
                     </div>
             )}
-            {data.length===0 ?
+            {data.length === 0 ?
             (
                 <CircularProgress />
             ):(
@@ -59,7 +60,7 @@ export default function Section({title,data,filterSource,type}) {
                 {!carouselToggle ?(
                     <div className={Styles.wrapper}>
                         {cardsToRender.map((ele)=>(
-                            <Card data ={ele} type={type}/>
+                            <Card data ={ele} type={type} key={ele.id}/>
                         ))}
                         </div>
                 ):(

@@ -2,17 +2,18 @@ import React from "react";
 import {useOutletContext} from "react-router-dom";
 import Section  from "../../Components/Section/Section.jsx";
 import styles from "./HomePage.module.css";
-import { fetchFilters,fetchTopAlbums } from "../api/api.jsx";
+import { fetchFilters } from "../api/api.jsx";
 
-export default function HomePage(){
+export default function HomePage({props}){
     const {data} = useOutletContext();
-    const {newAlbums,topAlbums,songs} = data;
+    
+    const {topAlbums,newAlbums,songs} = data;
 
     return (
 
         <>
             <div className={styles.wrapper}>
-               <Section title="Top Albums" data={topAlbums} type="albums" filterSource={fetchTopAlbums} />
+               <Section title="Top Albums" data={topAlbums} type="album" />
 
                <Section title="New Albums" data={newAlbums} type="album" />
                

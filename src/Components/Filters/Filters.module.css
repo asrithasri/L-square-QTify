@@ -1,3 +1,5 @@
 .tab{
-    color: white;
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: none;
 }
