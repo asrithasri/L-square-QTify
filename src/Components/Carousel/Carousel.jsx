@@ -15,7 +15,6 @@ const Controls = ({data}) => {
     }, [data]);
 
     return <></>;
-
 };
 
 function Carousel({data, renderComponent}){

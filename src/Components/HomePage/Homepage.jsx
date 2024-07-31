@@ -9,10 +9,13 @@ export default function HomePage(){
     const {newAlbums,topAlbums,songs} = data;
 
     return (
+
         <>
             <div className={styles.wrapper}>
                <Section title="Top Albums" data={topAlbums} type="albums" filterSource={fetchTopAlbums} />
+
                <Section title="New Albums" data={newAlbums} type="album" />
+               
                <Section title="Songs" data={songs} type="song" filterSource={fetchFilters}/>
                 </div>
         

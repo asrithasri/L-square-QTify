@@ -4,8 +4,10 @@ import styles from "./Logo.module.css";
 
 export default function Logo() {
   return (
+    
     <div className={styles.logo}>
         <img src={LogoImage} alt="qtify-logo" width={67} />
     </div>
   );
+
 }

@@ -30,6 +30,7 @@ function Card ({data,type}){
                     </Link>
                 </Tooltip>
             );
+            
         }
 
         else if(type==="song"){

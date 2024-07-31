@@ -5,7 +5,7 @@ import Typography  from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import styles from "./Filters.module.css";
 
-function TabPanel(props){
+ function TabPanel(props){
     const {children , value,index,...other}= props;
 
     return(
@@ -22,6 +22,7 @@ function TabPanel(props){
                 )}
             </div>
     );
+
 }
 
 function Filters({ filters, selectedFilterIndex, setSelectedFilterIndex}){
@@ -46,6 +47,7 @@ function Filters({ filters, selectedFilterIndex, setSelectedFilterIndex}){
                     style:{
                         backgroundColor: "var(--color-primary)",
                     },
+                    
                 }}
                 >
 
