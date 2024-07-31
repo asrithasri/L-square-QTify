@@ -39,6 +39,7 @@
 .chip{
     background-color: black;
     color: white;
+    text-align: center;
 }
 .pill{
     font-size: 12px;
@@ -50,7 +51,8 @@
 }
 
 .titlewrapper{
-    text-decoration: none;
+    text-align: center;
     font-family: 'Poppins';
     color: white;
+    text-wrap: wrap;
 }
